@@ -11,4 +11,10 @@ The API should support the following requests:
 - `GET /v1/streams`
 - `GET /v1/streams/{id}`
 
-The API response for an individual resource should resemble [the following JSON structure](https://github.com/discovery-digital/svc-codingchallenge/blob/master/stubs/sample-api-response-with-ads.json). Note that multiple resources should simply be an array of these objects.
+The API response for an individual resource should include the following attributes:
+- **streamUrl** - HLS stream URL
+- **captions** - Array of caption URLs and their associated caption type (vtt, scc)
+- **ads** - Array of advertisement metadata
+
+Your API response should resemble [the following JSON structure](https://github.com/discovery-digital/svc-codingchallenge/blob/master/stubs/sample-api-response-with-ads.json). Note that multiple resources should simply be an array of these objects.
+
