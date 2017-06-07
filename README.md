@@ -5,6 +5,7 @@ Our coding challenge is your opportunity to demonstrate your experience, skills,
 
 ## Submission Guidelines
 Once you are ready to submit your solution, please ensure the following guidelines are followed:
+- Although we recognize and appreciate knowledge in many languages, we ask that your solution be implemented in either PHP, Go or Python
 - Link to the Github-hosted repository
 - At least one main README describing the following:
   - Description of your problem and solution
