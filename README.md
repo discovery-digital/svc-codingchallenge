@@ -16,3 +16,11 @@ Once you are ready to submit your solution, please ensure the following guidelin
   - Any other sections you deem worthy for a production service
 
 Note: You do not need to host your code anywhere. We will follow your README instructions for how to build and run your solution.
+
+## Evaluation Criteria
+Your code will be evaluated on the following criteria:
+- **Code quality** - Is the code simple to understand and maintainable? Does the code raise any implementation concerns?
+- **Correctness** - Does your solution do what was asked? If there is anything missing, does the README explain why?
+- **Thoroughness** - Attention to handling edge cases
+- **Testing** - Not necessarily looking for full test coverage but trying to get a sense of your approach to testing your code 
+- **Technical choices** - Do the choice of libraries, patterns, etc. seem appropriate?
