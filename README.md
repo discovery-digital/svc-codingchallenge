@@ -1,5 +1,5 @@
 # Coding Challenge
-Our coding challenge is your opportunity to demonstrate your experience, skills, and aptitude by building a single prototype solving one of the following challenges to solve:
+Our coding challenge is your opportunity to demonstrate your experience, skills, and aptitude by building a single solution to one of the following challenges to solve:
 1. [Streams API](https://github.com/discovery-digital/svc-codingchallenge/blob/master/streams_api.md)
 2. Who Kicked Me Off??
 
