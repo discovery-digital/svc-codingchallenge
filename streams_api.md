@@ -26,14 +26,14 @@ The API response for an individual resource should resemble the following JSON s
   ads: {
     breaks: [
       {
-        "breakId": "0.0.0.125406899",
-        "ads": [],
-        "duration": 0,
-        "timeOffset": 0,
-        "position": "preroll",
-        "type": "linear",
-        "events": {
-          "impressions": [
+        breakId: "0.0.0.125406899",
+        ads: [],
+        duration: 0,
+        timeOffset: 0,
+        position: "preroll",
+        type: "linear",
+        events: {
+          impressions: [
             "http://some-ad-server.com/ad/l/1"
           ]
         }
@@ -41,16 +41,16 @@ The API response for an individual resource should resemble the following JSON s
     ],
     breakOffsets: [
       {
-        "timeOffset": 0,
-        "index": 0
+        timeOffset: 0,
+        index: 0
       },
       {
-        "timeOffset": 586.37,
-        "index": 1
+        timeOffset: 586.37,
+        index: 1
       },
       {
-        "timeOffset": 1174.61,
-        "index": 2
+        timeOffset: 1174.61,
+        index: 2
       }
     ]
   }
