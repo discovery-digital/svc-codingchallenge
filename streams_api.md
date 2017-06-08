@@ -12,7 +12,7 @@ The API should support the following requests:
 - `GET /v1/streams/{id}`
 
 The API response for an individual resource should include the following attributes:
-- **`id`** - streamId used to uniquely identify the stream resource
+- **`id`** - ID used to uniquely identify the stream resource
 - **`streamUrl`** - HLS stream URL
 - **`captions`** - Array of caption URLs and their associated caption type (vtt, scc)
 - **`ads`** - Array of advertisement metadata typically obtained from an Ad API
@@ -20,6 +20,6 @@ The API response for an individual resource should include the following attribu
 Your API response should resemble [the following JSON structure](/data/sample-api-response-with-ads.json). Note that multiple resources should simply be an array of these objects.
 
 ## Data Sources
-**`id`**, **`streamUrl`** and **`captions`** - attributes obtained from a database query.  You can find an export of the database for your development and testing [here](/data/streams-mongoexport.json).  Each individual stream resource has a corresponding document in mongo.
+**`id`**, **`streamUrl`** and **`captions`** - Attributes obtained from a database query.  You can find an export of the database for your development and testing [here](/data/streams-mongoexport.json).  Each individual stream resource has a corresponding document in Mongo.
 
-**`ads`** - attribute obtained by issuing an HTTP GET request to an Ad API.  In place of a real Ad API, you may use this simplified API URL: https://gruesome-rate-3945.nanoscaleapi.io/v1/codingchallenge/ads/{streamId} where `streamId` is the same ID used for your implemented Streams API.  This API will return ad metadata corresponding to the specified `streamId`.
+**`ads`** - Attribute obtained by issuing an HTTP GET request to an Ad API.  In place of a real Ad API, you may use this simplified API URL: https://gruesome-rate-3945.nanoscaleapi.io/v1/codingchallenge/ads/{streamId} where `streamId` is the same ID used for your implemented Streams API.  This API will return ad metadata corresponding to the specified `streamId`.
