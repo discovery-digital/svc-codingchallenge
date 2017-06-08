@@ -1,7 +1,6 @@
 # Coding Challenge
-Our coding challenge is your opportunity to demonstrate your experience, skills, and aptitude by building a single solution to one of the following challenges to solve:
-1. [Streams API](https://github.com/discovery-digital/svc-codingchallenge/blob/master/streams_api.md)
-2. Who Kicked Me Off??
+Our coding challenge is your opportunity to demonstrate your experience, skills, and aptitude by building a single solution to the following challenge:
+- [Streams API](https://github.com/discovery-digital/svc-codingchallenge/blob/master/streams_api.md)
 
 ## Submission Guidelines
 Once you are ready to submit your solution, please ensure the following guidelines are followed:
