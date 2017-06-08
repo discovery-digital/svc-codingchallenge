@@ -1,5 +1,5 @@
 # Streams API Coding Challenge
-The following describes the coding challenge for implementing a *Streams API*.  Please read entire document as as well as the entire [README.md](/README.md) before implementing and submitting your solution.
+The following describes the coding challenge for implementing a *Streams API*.  Please read the entire document as well as the entire [README.md](/README.md) before implementing and submitting your solution.
 
 ## Background
 Our clients (mobile apps, web SPAs, connected TV apps on tvOS, Roku, FireTV, etc.) need to play Discovery video content to support our digital experiences.  To do this, they must issue HTTP requests to our Streams API which returns playback data used for rendering our custom-developed video players.
