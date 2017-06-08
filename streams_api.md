@@ -22,4 +22,4 @@ Your API response should resemble [the following JSON structure](/data/sample-ap
 ## Data Sources
 **`id`**, **`streamUrl`** and **`captions`** - attributes obtained from a database query.  You can find an export of the database for your development and testing [here](/data/streams-mongoexport.json).  Each individual stream resource has a corresponding document in mongo.
 
-**`ads`** - attribute obtained by issuing an HTTP GET request to an Ad API.  In place of a real Ad API, you may use this simplified API URL: `https://gruesome-rate-3945.nanoscaleapi.io/v1/codingchallenge/ads/{streamId}` where `streamId` is the same ID used for your implemented Streams API.  This API will return ad metadata corresponding to the specified `streamId`.
+**`ads`** - attribute obtained by issuing an HTTP GET request to an Ad API.  In place of a real Ad API, you may use this simplified API URL: https://gruesome-rate-3945.nanoscaleapi.io/v1/codingchallenge/ads/{streamId} where `streamId` is the same ID used for your implemented Streams API.  This API will return ad metadata corresponding to the specified `streamId`.
