@@ -17,9 +17,9 @@ The API response for an individual resource should include the following attribu
 - **`captions`** - Array of caption URLs and their associated caption type (vtt, scc)
 - **`ads`** - Array of advertisement metadata
 
-Your API response should resemble [the following JSON structure](/stubs/sample-api-response-with-ads.json). Note that multiple resources should simply be an array of these objects.
+Your API response should resemble [the following JSON structure](/data/sample-api-response-with-ads.json). Note that multiple resources should simply be an array of these objects.
 
 ## Data Sources
-**`id`**, **`streamUrl`** and **`captions`** are obtained from a database query.  You can find a mongo-dump of the database for your development and testing [here]().
+**`id`**, **`streamUrl`** and **`captions`** are obtained from a database query.  You can find an export of the database for your development and testing [here](/data/streams-mongoexport.json).
 
 **`ads`** are obtained by issuing an HTTP GET request to the following URL: `https://gruesome-rate-3945.nanoscaleapi.io/v1/codingchallenge/ads/{streamId}` where `streamId` is the same ID used for your implemented Streams API.
