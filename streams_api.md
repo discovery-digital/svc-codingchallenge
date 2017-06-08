@@ -12,10 +12,14 @@ The API should support the following requests:
 - `GET /v1/streams/{id}`
 
 The API response for an individual resource should include the following attributes:
-- **streamUrl** - HLS stream URL. URL is driven by values stored in a database.
-- **captions** - Array of caption URLs and their associated caption type (vtt, scc). Captions are driven by values stored in a database.
-- **ads** - Array of advertisement metadata. Ads are driven by an HTTP request to an outside vendors API.
+- **`id`** - Unique identifier for the stream resource
+- **`streamUrl`** - HLS stream URL
+- **`captions`** - Array of caption URLs and their associated caption type (vtt, scc)
+- **`ads`** - Array of advertisement metadata
 
 Your API response should resemble [the following JSON structure](https://github.com/discovery-digital/svc-codingchallenge/blob/master/stubs/sample-api-response-with-ads.json). Note that multiple resources should simply be an array of these objects.
 
 ## Data Sources
+**`id`**, **`streamUrl`** and **`captions`** are obtained from a database query.  You can find a mongo-dump of the database for your development and testing [here]().
+
+**`ads`** are obtained by issuing an HTTP GET request to the following URL: `http://somedomain.org/v1/codingchallenge/adsforstreams`.
