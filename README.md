@@ -13,7 +13,7 @@ Once you are ready to submit your solution, please ensure the following guidelin
     - Build your solution
     - Run your solution
     - Run your unit tests
-  - Any other sections you deem worthy for a production service
+  - Any other sections you deem worthy of documenting in a similar fashion to a production service you would ordinarily develop
 
 Note: You do not need to host your code anywhere. We will follow your README instructions for how to build and run your solution.
 
