@@ -22,4 +22,4 @@ Your API response should resemble [the following JSON structure](/stubs/sample-a
 ## Data Sources
 **`id`**, **`streamUrl`** and **`captions`** are obtained from a database query.  You can find a mongo-dump of the database for your development and testing [here]().
 
-**`ads`** are obtained by issuing an HTTP GET request to the following URL: `https://gruesome-rate-3945.nanoscaleapi.io/v1/codingchallenge/ads/{streamId}`.
+**`ads`** are obtained by issuing an HTTP GET request to the following URL: `https://gruesome-rate-3945.nanoscaleapi.io/v1/codingchallenge/ads/{streamId}` where `streamId` is the same ID used for your implemented Streams API.
