@@ -22,6 +22,6 @@ Note: You do not need to host your code anywhere. We will follow your README ins
 Your code will be evaluated on the following criteria:
 - **Code quality** - Is the code simple to understand and maintainable? Does the code raise any implementation concerns?
 - **Correctness** - Does your solution do what was asked? If there is anything missing, does the README explain why?
-- **Thoroughness** - Attention to handling edge cases
+- **Thoroughness** - Attention to detail (i.e., edge cases considered)
 - **Testing** - Not necessarily looking for full test coverage but trying to get a sense of your approach to testing your code 
 - **Technical choices** - Do the choice of libraries, patterns, etc. seem appropriate?
