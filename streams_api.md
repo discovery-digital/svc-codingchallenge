@@ -12,7 +12,7 @@ The API should support the following requests:
 - `GET /v1/streams/{id}`
 
 The API response for an individual resource should include the following attributes:
-- **`id`** - Unique identifier for the stream resource
+- **`id`** - streamId used to uniquely identify the stream resource
 - **`streamUrl`** - HLS stream URL
 - **`captions`** - Array of caption URLs and their associated caption type (vtt, scc)
 - **`ads`** - Array of advertisement metadata typically obtained from an Ad API
