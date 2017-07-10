@@ -1,37 +1,53 @@
 {
-  "streamUrl": "https://somecdn.com/0123456789.m3u8",
+  "id": "5938b99cb6906eb1fbaf1f1c",
+  "streamUrl": "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8",
   "captions": {
     "vtt": {
-      "en": "https://captionslocation.com/0123456789/captions.vtt"
+      "en": "https:\/\/captionslocation.com\/0123456789\/captions.vtt"
     },
     "scc": {
-      "en": "https://captionslocation.com/0123456789/captions.scc"
+      "en": "https:\/\/captionslocation.com\/0123456789\/captions.scc"
     }
   },
   "ads": {
-    "breaks": [
+    "breakOffsets": [
       {
-        "breakId": "0.0.0.125406899",
-        "ads": [],
-        "duration": 0,
-        "timeOffset": 0,
-        "position": "preroll",
-        "type": "linear",
-        "events": {
-          "impressions": [
-            "http://some-ad-server.com/ad/l/1"
-          ]
-        }
+        "index": 0,
+        "timeOffset": 0
       },
       {
-        "breakId": "mid0",
+        "index": 1,
+        "timeOffset": 553.07
+      },
+      {
+        "index": 2,
+        "timeOffset": 1212.0304583333
+      }
+    ],
+    "breaks": [
+      {
+        "ads": [
+          
+        ],
+        "breakId": "0.0.0.125406899",
+        "duration": 0,
+        "events": {
+          "impressions": [
+            "http:\/\/some-ad-server.com\/ad\/l\/1"
+          ]
+        },
+        "position": "preroll",
+        "timeOffset": 0,
+        "type": "linear"
+      },
+      {
         "ads": [
           {
             "creative": "abcd1234",
             "duration": 30,
             "events": {
               "impressions": [
-                "http://some-ad-server.com/ad/l/1"
+                "http:\/\/some-ad-server.com\/ad\/l\/1"
               ]
             }
           },
@@ -40,7 +56,7 @@
             "duration": 40,
             "events": {
               "impressions": [
-                "http://some-ad-server.com/ad/l/1"
+                "http:\/\/some-ad-server.com\/ad\/l\/1"
               ]
             }
           },
@@ -49,30 +65,30 @@
             "duration": 20,
             "events": {
               "impressions": [
-                "http://some-ad-server.com/ad/l/1"
+                "http:\/\/some-ad-server.com\/ad\/l\/1"
               ]
             }
           }
         ],
+        "breakId": "mid0",
         "duration": 90,
-        "timeOffset": 553.07,
-        "position": "midroll",
-        "type": "linear",
         "events": {
           "impressions": [
-            "http://some-ad-server.com/ad/l/1"
+            "http:\/\/some-ad-server.com\/ad\/l\/1"
           ]
-        }
+        },
+        "position": "midroll",
+        "timeOffset": 553.07,
+        "type": "linear"
       },
       {
-        "breakId": "mid1",
         "ads": [
           {
             "creative": "abcd1237",
             "duration": 10,
             "events": {
               "impressions": [
-                "http://some-ad-server.com/ad/l/1"
+                "http:\/\/some-ad-server.com\/ad\/l\/1"
               ]
             }
           },
@@ -81,7 +97,7 @@
             "duration": 20,
             "events": {
               "impressions": [
-                "http://some-ad-server.com/ad/l/1"
+                "http:\/\/some-ad-server.com\/ad\/l\/1"
               ]
             }
           },
@@ -90,34 +106,21 @@
             "duration": 30,
             "events": {
               "impressions": [
-                "http://some-ad-server.com/ad/l/1"
+                "http:\/\/some-ad-server.com\/ad\/l\/1"
               ]
             }
           }
         ],
+        "breakId": "mid1",
         "duration": 60,
-        "timeOffset": 1212.0304583333,
-        "position": "midroll",
-        "type": "linear",
         "events": {
           "impressions": [
-            "http://some-ad-server.com/ad/l/1"
+            "http:\/\/some-ad-server.com\/ad\/l\/1"
           ]
-        }
-      }
-    ],
-    "breakOffsets": [
-      {
-        "timeOffset": 0,
-        "index": 0
-      },
-      {
-        "timeOffset": 553.07,
-        "index": 1
-      },
-      {
+        },
+        "position": "midroll",
         "timeOffset": 1212.0304583333,
-        "index": 2
+        "type": "linear"
       }
     ]
   }
