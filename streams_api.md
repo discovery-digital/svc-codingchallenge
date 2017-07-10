@@ -8,7 +8,6 @@ Our clients (mobile apps, web SPAs, connected TV apps on tvOS, Roku, FireTV, etc
 Create your version of this *Streams API*.  Any requirements not explicitly specified is an opportunity to propose your own solution.
 
 The API should support the following requests:
-- `GET /v1/streams`
 - `GET /v1/streams/{id}`
 
 The API response for an individual resource should include the following attributes:
@@ -17,7 +16,7 @@ The API response for an individual resource should include the following attribu
 - **`captions`** - Array of caption URLs and their associated caption type (vtt, scc)
 - **`ads`** - Array of advertisement metadata typically obtained from an Ad API
 
-Your API response should resemble [the following JSON structure](/data/sample-api-response-with-ads.json). Note that multiple resources should simply be an array of these objects.
+Your API response should resemble [the following JSON structure](/data/sample-api-response-with-ads.json).
 
 ## Data Sources
 **`id`**, **`streamUrl`** and **`captions`** - Attributes obtained from a database query.  You can find an export of the database for your development and testing [here](/data/streams-mongoexport.json).  Each individual stream resource has a corresponding document in Mongo.
