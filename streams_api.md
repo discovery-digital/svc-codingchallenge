@@ -22,3 +22,5 @@ Your API response should resemble [the following JSON structure](/data/sample-ap
 **`id`**, **`streamUrl`** and **`captions`** - Attributes obtained from a database query.  You can find an export of the database for your development and testing [here](/data/streams.json).  Each individual stream resource has a corresponding document in Mongo.
 
 **`ads`** - Attribute obtained by issuing an HTTP GET request to a 3rd party Ad API.  In place of a real Ad API, you may use this simplified API URL: https://coding-challenge.dsc.tv/v1/ads/{streamId} where `streamId` is the same ID used for your implemented Streams API.  This API will return ad metadata corresponding to the specified `streamId`.
+
+Swagger/OpenAPI documentation of Ad API can be found [here](adapi-swagger.yaml).
