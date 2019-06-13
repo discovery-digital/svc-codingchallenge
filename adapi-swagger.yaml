@@ -1,0 +1,161 @@
+---
+openapi: 3.0.0
+info:
+  title: Coding Challenge Ad API
+  description: Discovery Coding Challenge Ad API
+  version: 1.0.0
+paths:
+  "/v1/ads":
+    get:
+      summary: Advertisements for streaming
+      description: Returns the advertisements for given streaming id
+      operationId: getAds
+      parameters:
+      - name: id
+        in: query
+        description: Streaming ID
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Advertisement Details
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/streamingAd"
+        '204':
+          "$ref": "#/components/responses/204"
+        '400':
+          "$ref": "#/components/responses/400"
+        '401':
+          "$ref": "#/components/responses/401"
+        '404':
+          "$ref": "#/components/responses/404"
+        '500':
+          "$ref": "#/components/responses/500"
+components:
+  schemas:
+    streamingAd:
+      description: Advertisement for streams
+      properties:
+        breakOffsets:
+          type: array
+          items:
+            "$ref": "#/components/schemas/breakOffset"
+        breaks:
+          type: array
+          items:
+            "$ref": "#/components/schemas/break"
+    breakOffset:
+      properties:
+        index:
+          type: integer
+        timeOffset:
+          type: integer
+    break:
+      properties:
+        ads:
+          type: array
+          items:
+            "$ref": "#/components/schemas/ad"
+        breakId:
+          type: string
+        duration:
+          type: integer
+        events:
+          type: object
+          properties:
+            impressions:
+              type: array
+              items:
+                type: string
+        position:
+          type: string
+        timeOffset:
+          type: integer
+        "type":
+          type: string
+    ad:
+      properties:
+        creative:
+          type: string
+        duration:
+          type: integer
+        detailed:
+          type: string
+        events:
+          type: object
+          properties:
+            impressions:
+              type: array
+              items:
+                type: string
+  responses:
+    '204':
+      description: No content
+    '400':
+      description: Invalid and/or malformed resource field(s)
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              code:
+                type: integer
+                format: int64
+              message:
+                type: string
+            example:
+              code: 400
+              message: 'Validation errors:...'
+    '401':
+      description: Access to the requested resource path is unauthorized
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              code:
+                type: integer
+                format: int64
+              message:
+                type: string
+            example:
+              code: 401
+              message: an authentication token is required
+    '404':
+      description: The requested resource path is not available
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              code:
+                type: integer
+                format: int64
+              message:
+                type: string
+            example:
+              code: 404
+              message: not found
+    '500':
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              code:
+                type: integer
+                format: int64
+              message:
+                type: string
+            example:
+              code: 500
+              message: Internal server error occurred
+  securitySchemes:
+    bearerAuth:
+      type: http
+      bearerFormat: JWT
+      scheme: bearer
