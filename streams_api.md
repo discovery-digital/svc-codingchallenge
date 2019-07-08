@@ -18,6 +18,8 @@ The API response for an individual resource should include the following attribu
 
 Your API response should resemble [the following JSON structure](/data/sample-api-response-with-ads.json).
 
+** Important: ** Please make sure that your solution doesn't have any generated code created by any tool.
+
 ## Data Sources
 **`id`**, **`streamUrl`** and **`captions`** - Attributes obtained from a database query.  You can find an export of the database for your development and testing [here](/data/streams.json).  Each individual stream resource has a corresponding document in Mongo.
 
